@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+body, .konten-utama {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #f4f2dd;
+  color: #2a2829;
+  min-height: 100vh;
+}
+
+.bg-charcoal {
+  background-color: #2a2829;
+}
+
+.bg-charcoal-dark {
+  background-color: #211f20;
+}
+
+.text-charcoal {
+  color: #2a2829;
+}
+
+.text-cream {
+  color: #f4f2dd;
+}
+
+.text-red {
+  color: #dc3331;
+}
+
+.btn-red {
+  background-color: #dc3331;
+  color: #ffffff;
+  border: 1px solid #dc3331;
+}
+
+.btn-red:hover {
+  background-color: #b82725;
+  color: #ffffff;
+  border-color: #b82725;
+}
+
+.btn-outline-charcoal {
+  color: #2a2829;
+  border-color: #2a2829;
+}
+
+.btn-outline-charcoal:hover {
+  background-color: #2a2829;
+  color: #f4f2dd;
+}
+
+.search-input {
+  background-color: #f4f2dd;
+  color: #2a2829;
+  border: 1px solid #dc3331;
+  max-width: 200px;
+}
+
+.search-input::placeholder {
+  color: #2a2829;
+  opacity: 0.6;
+}
+
+.sidebar-box {
+  background-color: #f4f2dd;
+  border: 1px solid rgba(42, 40, 41, 0.15);
+}
+
+.sidebar-title {
+  color: #2a2829;
+  letter-spacing: 0.5px;
+}
+
+.category-active {
+  background-color: #dc3331;
+}
+
+.carousel-img {
+  height: 360px;
+  object-fit: cover;
+  filter: brightness(0.55);
+}
+
+.badge-count {
+  background-color: #2a2829;
+  color: #f4f2dd;
+}
+
+.movie-card {
+  background-color: #f4f2dd;
+  border: 1px solid rgba(42, 40, 41, 0.15);
+}
+
+.movie-poster {
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+
+.footer-desc {
+  color: #f4f2dd;
+  opacity: 0.8;
+}

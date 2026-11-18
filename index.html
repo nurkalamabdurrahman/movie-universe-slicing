@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Universe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="konten-utama">
+      <div class="navbar navbar-expand-lg px-3 px-md-4 py-4 border-bottom bg-charcoal">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand text-white fw-bold d-flex align-items-center" href="#">
+            <span>MovieUniverse<span class="text-red">.</span></span>
+          </a>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#featured">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#movies">Movies</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#genres">Genres</a></li>
+          </ul>
+          <form class="d-flex" role="search" action="#movies">
+            <input class="form-control form-control-sm me-2 search-input" type="search" placeholder="Cari film..." aria-label="Search">
+            <button class="btn btn-sm btn-red" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="konten container-fluid px-3 px-md-4 py-4">
+        <div class="row g-4">
+          <div class="sidebar col-12 col-md-3 col-lg-2">
+            <div class="p-3 rounded sidebar-box">
+              <h6 class="sidebar-title text-uppercase fw-bold mb-3">Kategori</h6>
+              <ul class="list-group list-group-flush mb-4 small">
+                <li class="list-group-item category-active text-white fw-semibold rounded py-2 px-3 mb-1">Browse Movies</li>
+                <li class="list-group-item border-0 py-2 px-3 mb-1 bg-transparent"><a href="#movies" class="text-decoration-none fw-medium text-charcoal">Popular Movies</a></li>
+                <li class="list-group-item border-0 py-2 px-3 mb-1 bg-transparent"><a href="#movies" class="text-decoration-none fw-medium text-charcoal">Latest Releases</a></li>
+                <li class="list-group-item border-0 py-2 px-3 mb-1 bg-transparent"><a href="#movies" class="text-decoration-none fw-medium text-charcoal">Top Rated</a></li>
+              </ul>
+              <h6 class="sidebar-title text-uppercase fw-bold mb-3" id="genres">Genre</h6>
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item border-0 py-2 px-3 mb-1 bg-transparent"><a href="#movies" class="text-decoration-none text-charcoal">Action</a></li>
+                <li class="list-group-item border-0 py-2 px-3 mb-1 bg-transparent"><a href="#movies" class="text-decoration-none text-charcoal">Comedy</a></li>
+                <li class="list-group-item border-0 py-2 px-3 mb-1 bg-transparent"><a href="#movies" class="text-decoration-none text-charcoal">Drama</a></li>
+                <li class="list-group-item border-0 py-2 px-3 mb-1 bg-transparent"><a href="#movies" class="text-decoration-none text-charcoal">Horror</a></li>
+                <li class="list-group-item border-0 py-2 px-3 mb-1 bg-transparent"><a href="#movies" class="text-decoration-none text-charcoal">Sci-Fi</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="konten-film col-12 col-md-9 col-lg-10">
+            <div id="carouselExampleCaptions" class="carousel slide mb-4 rounded overflow-hidden shadow-sm" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/images/movie-4.jpg" class="d-block w-100 carousel-img" alt="Interstellar Odyssey">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/movie-2.jpg" class="d-block w-100 carousel-img" alt="Cyber Nexus">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/movie-3.jpg" class="d-block w-100 carousel-img" alt="Crimson Horizon">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-end mb-3">
+              <div>
+                <h4 class="fw-bold mb-1 text-charcoal">Katalog Film Terbaru</h4>
+                <p class="text-muted small mb-0">Eksplorasi pilihan film bioskop dan tontonan favorit terbaik minggu ini.</p>
+              </div>
+              <span class="badge px-3 py-2 badge-count">8 Film Tersedia</span>
+            </div>
+
+            <div class="row g-3" id="movies">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 movie-card">
+                  <img src="assets/images/movie-1.jpg" class="card-img-top movie-poster" alt="Cyber Nexus">
+                  <div class="card-body p-3 d-flex flex-column">
+                    <h6 class="card-title fw-bold mb-1 text-truncate text-charcoal">Cyber Nexus</h6>
+                    <p class="card-text small text-muted mb-3">2024 &bull; Sci-Fi &bull; ⭐ 8.7</p>
+                    <div class="mt-auto d-flex gap-2">
+                      <a href="#movies" class="btn btn-sm btn-red w-100">Watch Now</a>
+                      <a href="#movies" class="btn btn-sm btn-outline-charcoal w-100">Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 movie-card">
+                  <img src="assets/images/movie-2.jpg" class="card-img-top movie-poster" alt="The Silent Echo">
+                  <div class="card-body p-3 d-flex flex-column">
+                    <h6 class="card-title fw-bold mb-1 text-truncate text-charcoal">The Silent Echo</h6>
+                    <p class="card-text small text-muted mb-3">2023 &bull; Drama &bull; ⭐ 8.4</p>
+                    <div class="mt-auto d-flex gap-2">
+                      <a href="#movies" class="btn btn-sm btn-red w-100">Watch Now</a>
+                      <a href="#movies" class="btn btn-sm btn-outline-charcoal w-100">Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 movie-card">
+                  <img src="assets/images/movie-3.jpg" class="card-img-top movie-poster" alt="Crimson Horizon">
+                  <div class="card-body p-3 d-flex flex-column">
+                    <h6 class="card-title fw-bold mb-1 text-truncate text-charcoal">Crimson Horizon</h6>
+                    <p class="card-text small text-muted mb-3">2024 &bull; Adventure &bull; ⭐ 8.9</p>
+                    <div class="mt-auto d-flex gap-2">
+                      <a href="#movies" class="btn btn-sm btn-red w-100">Watch Now</a>
+                      <a href="#movies" class="btn btn-sm btn-outline-charcoal w-100">Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 movie-card">
+                  <img src="assets/images/movie-4.jpg" class="card-img-top movie-poster" alt="Midnight Protocol">
+                  <div class="card-body p-3 d-flex flex-column">
+                    <h6 class="card-title fw-bold mb-1 text-truncate text-charcoal">Midnight Protocol</h6>
+                    <p class="card-text small text-muted mb-3">2022 &bull; Action &bull; ⭐ 8.1</p>
+                    <div class="mt-auto d-flex gap-2">
+                      <a href="#movies" class="btn btn-sm btn-red w-100">Watch Now</a>
+                      <a href="#movies" class="btn btn-sm btn-outline-charcoal w-100">Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 movie-card">
+                  <img src="assets/images/movie-5.jpg" class="card-img-top movie-poster" alt="Shadows of Eternity">
+                  <div class="card-body p-3 d-flex flex-column">
+                    <h6 class="card-title fw-bold mb-1 text-truncate text-charcoal">Shadows of Eternity</h6>
+                    <p class="card-text small text-muted mb-3">2023 &bull; Horror &bull; ⭐ 7.9</p>
+                    <div class="mt-auto d-flex gap-2">
+                      <a href="#movies" class="btn btn-sm btn-red w-100">Watch Now</a>
+                      <a href="#movies" class="btn btn-sm btn-outline-charcoal w-100">Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 movie-card">
+                  <img src="assets/images/movie-6.jpg" class="card-img-top movie-poster" alt="Beyond the Orbit">
+                  <div class="card-body p-3 d-flex flex-column">
+                    <h6 class="card-title fw-bold mb-1 text-truncate text-charcoal">Beyond the Orbit</h6>
+                    <p class="card-text small text-muted mb-3">2024 &bull; Sci-Fi &bull; ⭐ 8.6</p>
+                    <div class="mt-auto d-flex gap-2">
+                      <a href="#movies" class="btn btn-sm btn-red w-100">Watch Now</a>
+                      <a href="#movies" class="btn btn-sm btn-outline-charcoal w-100">Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 movie-card">
+                  <img src="assets/images/movie-7.jpg" class="card-img-top movie-poster" alt="Lost in Venice">
+                  <div class="card-body p-3 d-flex flex-column">
+                    <h6 class="card-title fw-bold mb-1 text-truncate text-charcoal">Lost in Venice</h6>
+                    <p class="card-text small text-muted mb-3">2023 &bull; Comedy &bull; ⭐ 8.2</p>
+                    <div class="mt-auto d-flex gap-2">
+                      <a href="#movies" class="btn btn-sm btn-red w-100">Watch Now</a>
+                      <a href="#movies" class="btn btn-sm btn-outline-charcoal w-100">Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 movie-card">
+                  <img src="assets/images/movie-8.jpg" class="card-img-top movie-poster" alt="Final Frontier">
+                  <div class="card-body p-3 d-flex flex-column">
+                    <h6 class="card-title fw-bold mb-1 text-truncate text-charcoal">Final Frontier</h6>
+                    <p class="card-text small text-muted mb-3">2024 &bull; Action &bull; ⭐ 9.0</p>
+                    <div class="mt-auto d-flex gap-2">
+                      <a href="#movies" class="btn btn-sm btn-red w-100">Watch Now</a>
+                      <a href="#movies" class="btn btn-sm btn-outline-charcoal w-100">Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer mt-5 bg-charcoal text-cream">
+        <footer class="p-4 p-md-5">
+          <div class="container-fluid">
+            <div class="row g-4">
+              <div class="col-12 col-md-4">
+                <div class="d-flex align-items-center mb-2">
+                  <span class="fs-5 fw-bold text-white">Movie Universe</span>
+                </div>
+                <p class="small footer-desc">
+                  Platform katalog film satu halaman dengan desain modern dan minimalis untuk mempermudah pencarian film favorit dunia.
+                </p>
+              </div>
+              <div class="col-6 col-md-3">
+                <h6 class="text-uppercase fw-bold mb-3 text-red">Navigasi</h6>
+                <ul class="list-unstyled small">
+                  <li class="mb-1"><a href="#featured" class="text-decoration-none text-white-50">Beranda</a></li>
+                  <li class="mb-1"><a href="#movies" class="text-decoration-none text-white-50">Koleksi Film</a></li>
+                  <li class="mb-1"><a href="#genres" class="text-decoration-none text-white-50">Kategori Genre</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h6 class="text-uppercase fw-bold mb-3 text-red">Bantuan</h6>
+                <ul class="list-unstyled small">
+                  <li class="mb-1"><a href="#" class="text-decoration-none text-white-50">Pusat Bantuan</a></li>
+                  <li class="mb-1"><a href="#" class="text-decoration-none text-white-50">Syarat & Ketentuan</a></li>
+                  <li class="mb-1"><a href="#" class="text-decoration-none text-white-50">Kebijakan Privasi</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-2">
+                <h6 class="text-uppercase fw-bold mb-3 text-red">Kontak</h6>
+                <ul class="list-unstyled small text-white-50">
+                  <li class="mb-1">nurkalamaz@movieuniv.id</li>
+                  <li class="mb-1">+62 888-0637-1059</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="text-center py-2 small bg-charcoal-dark text-cream">
+          &copy; 2026 Movie Universe. All rights reserved.
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+  </body>
+</html>

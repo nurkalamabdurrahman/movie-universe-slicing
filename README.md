@@ -49,4 +49,4 @@ Open the project folder and launch `index.html` in your browser.
 
 ---
 
-\<p align="center">   \<i>Built as part of a third-semester web development project.\</i> \</p>
+Built as part of a third-semester web development project.
